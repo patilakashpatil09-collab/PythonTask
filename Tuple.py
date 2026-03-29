@@ -188,13 +188,354 @@ name="prashant"
 # print(value.count(7))
 # print(value.count(6)) # This will raise a ValueError because the value 6 is not present in the list. The index() method will only return the index of the first occurrence of a value if it is found in the list, otherwise it will raise an error.
 
-import datetime
-month=datetime.datetime.now().month
-now=datetime.datetime.now()
-print(month)
-print(now)
-#   i want one month calendar
-import calendar
-year=2024
-month=6
-print(calendar.month(year,month)) # This will print the calendar for the month of June in
+# import datetime
+# month=datetime.datetime.now().month
+# now=datetime.datetime.now()
+# print(month)
+# print(now)
+# #   i want one month calendar
+# import calendar
+# year=2024
+# month=6
+# print(calendar.month(year,month)) # This will print the calendar for the month of June in
+
+
+# while loop
+#  while syntax:
+#      initialization
+#      while condition:
+#         #  statement
+#         #  increment/decrement
+
+i=1
+# while i<=5:
+#     print(i,end=" ")
+#     i=i+1
+
+# write pgm sum of natural number from 1 to 10 using while loop
+# i=1
+# sum=0
+# while i<=10:
+#     sum=sum+i
+#     i=i+1
+# print("sum:", sum)
+
+# what to print the count of even and odd number from 1 to 10 using while loop
+# i=1
+# even_count=0
+# odd_count=0
+# while i<=10:
+#     if i%2==0:
+#         even_count=even_count+1
+#     else:
+#         odd_count=odd_count+1
+#     i=i+1
+#     continue
+# print("Even count:", even_count)
+# print("Odd count:", odd_count)
+
+# write a pgm to print the multiplication table of a given number using while loop
+# i=1
+# num=0
+# num=int(input("Enter a number: "))
+# while i<=10:
+#     print(num,"x",i,"=",num*i)
+#     i=i+1
+
+# to prin 1245 & 5421 using  for loop
+
+# for i ,j, in zip(range(1,6),range(5,0,-1)):
+#     if i==3 and j==3:
+#         continue
+#     print(i,"",j)
+
+
+# factorial of a number using while loop
+
+# num=int(input("Enter a number: "))
+# factorial=1
+# while num>0:
+#     factorial=factorial*num
+#     num=num-1
+#     print("Factorial:", factorial)
+
+# username=" "
+# password=0
+# while username!="prashant" or password!=12345:
+#     username=input("Enter your username: ")
+#     password=int(input("Enter your password: "))
+
+# nested for loop
+# for i in range(1,4):
+#     for j in range(1,4):
+#         for k in range(1,4):
+#             if i==j==k:
+#                 print(i,"",j,"",k)
+
+# n=int(input("Enter the number of rows: "))
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print(i,end=" ")
+#     print()
+# n=int(input("Enter the number of rows: "))
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print(chr(64+i),end=" ")
+#     print()
+# to find second largest number in a list
+
+# list=[2,9,7,3,8,9]
+# list.sort()
+# print(list)
+# print("Second largest number is:", list[2]) # This will sort the list in ascending
+
+# list=[2,9,7,3,8,9]
+# list.sort(reverse=True)
+# print(list)
+# print("Second largest number is:", list[1]) # This will sort the list in descending order
+
+
+# Function In Python 
+
+
+# def value(a,b):
+#     sum=a+b
+#     return sum
+# result=value(5,10)
+# print(result)
+
+# synttax of function
+# def function(parameter):
+#     statement 1
+#     statement 2
+    
+#     return value()
+
+# def msg(): #calling function
+#     print("hello world")
+#     print("welcome to my world")
+    
+# msg()#calling function
+# msg()
+
+# def login():
+#     username=input("Enter your username: ")
+#     password=int(input("Enter your password: "))
+#     if username == password:
+#         print("Login successful")
+#     else:
+#         print("Login failed")
+        
+# login()
+
+# def add():
+#     return 2+3
+
+# #print(add())'
+# result=add()
+# print("result:", result)
+
+
+# def add():
+#     a=int(input("Enter first number: "))
+#     b=int(input("Enter second number: "))
+#     add=a+b
+#     sub=a-b
+#     mul=a*b
+#     div=a/b
+#     return add,sub,mul,div
+# result = add()
+# print("Results:", result[0])
+
+#  how many types of argumntes passed in funvtion
+# ans .they are 4 types of arguments passed in function
+# 1. Positional arguments
+# 2. Keyword arguments
+# 3. Default arguments
+# 4. Variable-length arguments /variable number of arguments
+
+# 1.positional arguiments
+# def name(a,b):
+#     return a+b
+# result=name(5,10)
+# print("result:", result)
+ 
+# def name(a,b):
+#     print(a+b)
+    
+# name(5,9)
+
+
+# def personalInfo(fname,lname,age):
+#     print("First Name:", fname)
+#     print("Last Name:", lname)
+#     print("Age:", age)
+
+# personalInfo("Kiran","Kumar",25) # This will call the personalInfo function with the arguments "Prashant" and "Kumar", and print the first name and last name accordingly.    
+
+# keyword arguments
+
+# def profile(fname,lname,age):
+#     print("First Name:", fname)
+#     print("Last Name:", lname)
+#     print("Age:", age)
+
+
+# profile(fname="Kiran", lname="Kumar", age=25)
+
+# default arguments
+# def cityname(city="New York"):
+#     print("City Name:", city)
+# cityname() # This will call the cityname function without providing an argument, so it will use the default value "New York" and print "City Name: New York".
+# cityname("bangalore")
+
+# def city(*name):
+#     print(name)
+
+# city("parish","India")
+# write a pgm to menu drive program using arthematic function
+# def addition():
+#     a=int(input("Enter first number: "))
+#     b=int(input("Enter second number: "))
+#     print("Addition:", a+b)
+# def substraction():
+#     a=int(input("Enter first number: "))
+#     b=int(input("Enter second number: "))
+#     print("Subtraction:", a-b)
+# def multiplication():
+#     a=int(input("Enter first number: "))
+#     b=int(input("Enter second number: "))
+#     print("Multiplication:", a*b)
+# def division():
+#     a=int(input("Enter first number: "))
+#     b=int(input("Enter second number: "))
+#     print("Division:", a/b)
+
+    
+# while True:
+#     print("1","Addition")
+#     print("2","Subtraction")
+#     print("3","Multiplication")
+#     print("4","Division")
+#     print("5","Exit")
+#     choice=int(input("Enter your choice: "))
+#     if choice==1:
+#         addition()
+#     elif choice==2:
+#         substraction()
+#     elif choice==3:
+#         multiplication()
+#     elif choice==4:
+#         division()
+#     elif choice==5:
+#         print("Exiting the program...")
+#         break
+#     else:
+#         print("Invalid choice. Please try again.")
+    
+    
+
+    
+#  to finf calculate  factorial of number
+
+# def fac():
+#     num=int(input("Enter a number"))
+#     fac=1
+#     for i in range(1,num+1):
+#         fac=fac*i
+#     print(fac)
+# fac()   
+    
+
+# exceptional handling in python
+# run time error is called exceptional handling in python
+# snytax errror is called compile time error in python
+# try:
+#     num1=int(input("Enter first number: "))
+#     num2=int(input("Enter second number: "))
+#     result=num1/num2
+#     print("Result:", result)
+# except ZeroDivisionError:
+#     print("Error: Cannot divide by zero.")
+# except ValueError:
+#     print("Error: Invalid input. Please enter a valid number.")
+
+
+# def value():
+#     try:
+#         num1=int(input("Enter first number: "))
+#         num2=int(input("Enter second number: "))
+#         result=num1+num2
+#         print("Addition:", result)
+#         result=num1-num2
+#         print("Subtraction:", result)
+#         result=num1*num2
+#         print("Multiplication:", result)
+#         result=num1/num2
+#         print("Division:", result)
+#     except ZeroDivisionError:
+#         print("Error: Cannot divide by zero.")
+#     except ValueError:
+#         print("Error: Invalid input. Please enter a valid number.")
+
+# value()
+
+
+#  predefined functions in python
+# user defined functions in python
+
+# try:
+#     num1=int(input("Enter a number: "))
+#     num2=int(input("Enter another number: "))
+#     print(num1/num2)
+# except ValueError:
+#     print("Error: Invalid input. Please enter a valid number.")
+# except ZeroDivisionError:
+#     print("Error: Cannot divide by zero.")
+
+# try:
+#     num1=int(input("Enter a number: "))
+#     num2=int(input("Enter another number: "))
+#     print(num1/num2)
+# except (ZeroDivisionError, ValueError, TypeError, NameError) as message:
+#     print("Error:", message)
+
+# try:
+#     num1=int(input("Enter a number: "))
+#     num2=int(input("Enter another number: "))
+#     print(num1/num2)
+# except (ZeroDivisionError, ValueError, TypeError, NameError) as message:
+#     print("Error:", message)
+# except:
+#     print("An unexpected error occurred.")
+
+# try:
+#     num1=int(input("Enter a number: "))
+#     num2=int(input("Enter another number: "))
+#     print(num1/num2)
+# except (ZeroDivisionError, ValueError, TypeError, NameError) as message:
+#     print("Error:", message)
+# else:
+#     print("An unexpected error occurred.")
+
+# try:
+#     num1=int(input("Enter a number: "))
+#     num2=int(input("Enter another number: "))
+#     print(2/4)
+# except (ZeroDivisionError, ValueError, TypeError, NameError) as message:
+#     print("Error:", message)
+# else:
+#     print("An unexpected error occurred.")
+# finally:   
+#     print("This block will always be executed, regardless of whether an exception occurred or not.")
+
+# try:
+#     num1=int(input("Enter a number: "))
+#     num2=int(input("Enter another number: "))
+#     try:
+#         print(num1/num2)        
+#     except ZeroDivisionError as message:
+#         print("Error:", message)
+# except ValueError as message:
+#     print("Error:", message)
+    
